@@ -41,14 +41,14 @@ p {
     --background-clr: hsl(0, 0%, 95%);
 
     /* Effects */
-    --shadow: 0 0 1em rgba(0,0,0, .25);
+    --shadow: 0 3em 3em rgba(0,0,0, .25);
 }
 
 /* Typography */
 main {
     font-family: var(--ff);
+    padding-bottom: 8rem;
 }
-
 h1,
 h2 {
     font-size: var(--fs-2);
@@ -73,9 +73,6 @@ body {
 img {
     max-width: 100%;
 }
-.main {
-
-}
 .container {
     width: 83%;
     margin: 0 auto;
@@ -85,27 +82,32 @@ img {
 body {
     background-color: var(--background-clr);
     max-width: 100%;
-    min-width: 280px;
+    min-width: 275px;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
 /* intro section*/
+.intro {
+    margin-top: 8rem;
+    margin-bottom: 6rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 .intro__heading {
     font-weight: var(--fw-l);
     line-height: 3.6rem;
 }
 .intro__subheading {
+    margin-bottom: 1rem;
     font-weight: var(--fw-b);
     line-height: 3.6rem;
 }
 .intro__info {
     line-height: 2.5rem;
-}
-.intro {
-    margin-top: 8rem;
-    margin-bottom: 6rem;
+    text-align: center;
 }
 
 /* cards section*/
@@ -119,26 +121,37 @@ body {
 .card {
     margin-top: 2.5rem;
     padding: 9%;
+    height: 222px;
     background-color: var(--neutral-clr-vlblue);
     border-radius: .5rem;
+    box-shadow: var(--shadow);
 }
 .supervisor-card {
     border-top: 4px solid var(--primary-clr-cyan);
-}
-.supervisor-card__text {
     background-image: url(images/icon-supervisor.svg);
     background-repeat: no-repeat;
     background-position: bottom right;
+    background-position: bottom 30px right 30px;
 }
-
 .teamBuilder-card {
     border-top: 4px solid var(--primary-clr-red);
+    background-image: url(images/icon-team-builder.svg);
+    background-repeat: no-repeat;
+    background-position: bottom right;
+    background-position: bottom 30px right 30px;
 }
 .karma-card {
     border-top: 4px solid var(--primary-clr-orange);
+    background-image: url(images/icon-karma.svg);
+    background-repeat: no-repeat;
+    background-position: bottom right;
+    background-position: bottom 30px right 30px;
 }
 .calculator-card {
     border-top: 4px solid var(--primary-clr-blue);
+    background-image: url(images/icon-calculator.svg);
+    background-repeat: no-repeat;
+    background-position: bottom 30px right 30px;
 }
 
 /* Footer */
