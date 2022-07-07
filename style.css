@@ -85,7 +85,16 @@ img {
     width: 83%;
     margin: 0 auto;
 }
-
+@media (min-width: 992px) {
+    .container {
+      width: 960px;
+    }
+  }
+  @media (min-width: 1200px) {
+    .container {
+      width: 1110px;
+    }
+  }
 /* Main */
 body {
     background-color: var(--background-clr);
@@ -117,20 +126,14 @@ body {
     line-height: 2.5rem;
     text-align: center;
 }
-
-/* cards section*/
-.card__heading {
-    font-weight: var(--fw-b);
-    line-height: 3.0rem;
-}
-.card__info {
-    line-height: 2.3rem;
-}
-@media (max-width: 500px) {
-    .card p {
-        font-size: var(--fs-p1);
+@media(min-width: 600px) {
+    section.intro.container {
+        max-width: 650px;
+        position: center;
     }
 }
+
+/* cards section*/
 .card {
     margin-top: 2.5rem;
     padding: 9%;
@@ -152,26 +155,58 @@ body {
         height: 232px;
     }
 }
-@media (min-width: 500px) {
-    .card {
-        background-size: 64px 64px;
+.card__heading {
+    font-weight: var(--fw-b);
+    line-height: 3.0rem;
+}
+.card__info {
+    line-height: 2.3rem;
+}
+@media (max-width: 500px) {
+    .card p {
+        font-size: var(--fs-p1);
     }
 }
 .supervisor-card {
     border-top: 4px solid var(--primary-clr-cyan);
     background-image: url(images/icon-supervisor.svg);
 }
+@media (min-width:1100px) {
+    .supervisor-card {
+
+    }
+}
 .teamBuilder-card {
     border-top: 4px solid var(--primary-clr-red);
     background-image: url(images/icon-team-builder.svg);
+}
+@media (min-width:1100px) {
+    .teamBuilder-card {
+        
+    }
 }
 .karma-card {
     border-top: 4px solid var(--primary-clr-orange);
     background-image: url(images/icon-karma.svg);
 }
+@media (min-width:1100px) {
+    .karma-card {
+        
+    }
+}
 .calculator-card {
     border-top: 4px solid var(--primary-clr-blue);
     background-image: url(images/icon-calculator.svg);
+}
+@media (min-width:1100px) {
+    .calculator-card {
+        
+    }
+}
+@media (min-width: 500px) {
+    .card {
+        background-size: 64px 64px;
+    }
 }
 /* Footer */
 .attribution { 
